@@ -13,80 +13,97 @@ module.exports = {
     },
     devtool: 'source-map',
     plugins:
-    [
-        new CopyWebpackPlugin({
-            patterns: [
-                { from: path.resolve(__dirname, '../static') }
-            ]
-        }),
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, '../src/index.html'),
-            minify: true
-        }),
-        new MiniCSSExtractPlugin()
-    ],
+        [
+            new CopyWebpackPlugin({
+                patterns: [
+                    { from: path.resolve(__dirname, '../static') }
+                ]
+            }),
+            new HtmlWebpackPlugin({
+                template: '!!haml-loader!./src/index.haml',
+                filename: 'index.html',
+                minify: true
+            }),
+            new HtmlWebpackPlugin({
+                template: '!!haml-loader!./src/pages/preview/index.haml',
+                filename: 'preview/index.html',
+                minify: true
+            }),
+            new MiniCSSExtractPlugin()
+        ],
     module:
     {
         rules:
-        [
-            // HTML
-            {
-                test: /\.(html)$/,
-                use:
-                [
-                    'html-loader'
-                ]
-            },
-
-            // JS
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use:
-                [
-                    'babel-loader'
-                ]
-            },
-
-            // CSS
-            {
-                test: /\.css$/,
-                use:
-                [
-                    MiniCSSExtractPlugin.loader,
-                    'css-loader'
-                ]
-            },
-
-            // Images
-            {
-                test: /\.(jpg|png|gif|svg)$/,
-                type: 'asset/resource',
-                generator:
+            [
+                // HTML
                 {
-                    filename: 'assets/images/[hash][ext]'
-                }
-            },
+                    test: /\.(html)$/,
+                    use:
+                        [
+                            'html-loader'
+                        ]
+                },
 
-            // Fonts
-            {
-                test: /\.(ttf|eot|woff|woff2)$/,
-                type: 'asset/resource',
-                generator:
+                // HAML
                 {
-                    filename: 'assets/fonts/[hash][ext]'
-                }
-            },
+                    test: /\.haml$/,
+                    use: [
+                        { loader: 'html-loader' },
+                        { loader: 'haml-loader' },
+                    ],
+                },
 
-            // Sounds
-            {
-                test: /\.(mp3|wav)$/,
-                type: 'asset/resource',
-                generator:
+
+                // JS
                 {
-                    filename: 'assets/audio/[hash][ext]'
+                    test: /\.js$/,
+                    exclude: /node_modules/,
+                    use:
+                        [
+                            'babel-loader'
+                        ]
+                },
+
+                // CSS
+                {
+                    test: /\.(sa|sc|c)ss$/,
+                    use:
+                        [
+                            'style-loader',
+                            { loader: 'css-loader', options: { url: false } },
+                            'sass-loader'
+                        ]
+                },
+
+                // Images
+                {
+                    test: /\.(jpg|png|gif|svg)$/,
+                    type: 'asset/resource',
+                    generator:
+                    {
+                        filename: 'assets/images/[hash][ext]'
+                    }
+                },
+
+                // Fonts
+                {
+                    test: /\.(ttf|eot|woff|woff2)$/,
+                    type: 'asset/resource',
+                    generator:
+                    {
+                        filename: 'assets/fonts/[hash][ext]'
+                    }
+                },
+
+                // Sounds
+                {
+                    test: /\.(mp3|wav)$/,
+                    type: 'asset/resource',
+                    generator:
+                    {
+                        filename: 'assets/audio/[hash][ext]'
+                    }
                 }
-            }
-        ]
+            ]
     }
 }

@@ -1,0 +1,33 @@
+body.preview {
+    section.window {
+        img {
+            width: 100%;
+        }
+
+        > p {
+            color: var(--белый);
+            position: absolute;
+            top: 220px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 168px;
+            font-weight: 400;
+            letter-spacing: -6px;
+        }
+
+        > div {
+            & {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+            }
+            img {
+                width: 380px;
+            }
+            p {
+                width: 540px;
+            }
+        }
+    }
+}
