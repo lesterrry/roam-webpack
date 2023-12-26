@@ -1,8 +1,1 @@
-/*************************
-Handcrafted by Aydar N.
-2023
-
-me@aydar.media
-*************************/
-
-import './style.css'
+import './index.css'
