@@ -1,0 +1,71 @@
+body#about {
+    section#about {
+        > div {
+            & {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            > div {
+                & {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                p:first-of-type {
+                    font-size: 138px;
+                    line-height: 140px;
+                }
+                p.pill {
+                    width: fit-content;
+                }
+                p.pill:last-of-type {
+                    width: 520px;
+                    margin-left: 200px;
+                }
+            }
+            img {
+                width: 500px;
+                height: 400px;
+                border-radius: 100px;
+            }
+        }
+    }
+    section#profiles {
+        & {
+            margin-top: 100px;
+            background-color: var(--черный);
+        }
+    }
+    section#people {
+        > div {
+            & {
+                border-radius: 80px;
+                height: 580px;
+                display: flex;
+                justify-content: space-between;
+            }
+            > p {
+                margin-top: 50px;
+                margin-left: 60px;
+                font-size: 26px;
+            }
+            > div {
+                & {
+                    display: flex;
+                    flex-direction: column;
+                    width: 1050px;
+                    overflow: hidden;
+                }
+                p {
+                    font-weight: 400;
+                    margin-top: -24px;
+                    font-size: 92px;
+                }
+                p:first-of-type {
+                    margin-top: -8px;
+                }
+            }
+        }
+    }
+}

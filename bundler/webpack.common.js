@@ -29,6 +29,11 @@ module.exports = {
                 filename: 'preview/index.html',
                 minify: true
             }),
+            new HtmlWebpackPlugin({
+                template: '!!haml-loader!./src/pages/about/index.haml',
+                filename: 'about/index.html',
+                minify: true
+            }),
             new MiniCSSExtractPlugin()
         ],
     module:

@@ -1,4 +1,6 @@
 @import 'pages/preview/index.scss';
+@import 'pages/about/index.scss';
+
 @import 'styles/header.scss';
 @import 'styles/footer.scss';
 @import 'styles/container.scss';
@@ -35,14 +37,14 @@ h6 {
 }
 
 p {
-	letter-spacing: -0.5px;
+	letter-spacing: -0.05em;
 }
 
 span.s {
 	font-family: 'Stezhok';
 	font-size: 165%;
-	margin-left: -28px;
-	margin-right: -28px;
+	margin-left: -0.1em;
+	margin-right: -0.1em;
 }
 
 html,
@@ -76,4 +78,8 @@ section {
 
 section:first-of-type {
 	margin-top: 80px;
+}
+
+.border {
+	border: 1.5px solid var(--черный);
 }

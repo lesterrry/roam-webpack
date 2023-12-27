@@ -4,4 +4,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+    section > div {
+        width: 1440px !important;
+    }
+    header, footer {
+        width: 1540px !important;
+    }
 }
