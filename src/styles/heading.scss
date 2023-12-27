@@ -1,0 +1,18 @@
+.heading {
+    & {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.pill {
+        border-radius: 512px;
+    }
+
+    p {
+        font-size: 148px;
+        text-align: center;
+        line-height: 1;
+    }
+}

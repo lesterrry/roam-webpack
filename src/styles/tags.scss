@@ -1,0 +1,10 @@
+.tags {
+    & {
+        display: flex;
+        gap: 10px;
+    }
+
+    .pill.medium {
+        font-size: 28px;
+    }
+}

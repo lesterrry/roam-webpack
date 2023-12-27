@@ -34,6 +34,11 @@ module.exports = {
                 filename: 'about/index.html',
                 minify: true
             }),
+            new HtmlWebpackPlugin({
+                template: '!!haml-loader!./src/materials/agrotourism/index.haml',
+                filename: 'materials/agrotourism/index.html',
+                minify: true
+            }),
             new MiniCSSExtractPlugin()
         ],
     module:

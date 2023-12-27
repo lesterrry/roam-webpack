@@ -1,12 +1,17 @@
 @import 'pages/preview/index.scss';
 @import 'pages/about/index.scss';
 
+@import 'materials/agrotourism/index.scss';
+
 @import 'styles/header.scss';
 @import 'styles/footer.scss';
 @import 'styles/container.scss';
 @import 'styles/pill.scss';
 @import 'styles/bundle.scss';
 @import 'styles/input.scss';
+@import 'styles/heading.scss';
+@import 'styles/tags.scss';
+@import 'styles/article.scss';
 @import 'styles/fonts.scss';
 @import 'styles/media.scss';
 
@@ -80,6 +85,10 @@ section:first-of-type {
 	margin-top: 80px;
 }
 
-.border {
+.border, .heading, .li::after {
 	border: 1.5px solid var(--черный);
+}
+
+.corner {
+	border-radius: 32px;
 }
