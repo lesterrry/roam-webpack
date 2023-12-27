@@ -1,13 +1,15 @@
 .heading {
     & {
         height: 600px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-size: cover;
     }
 
     &.pill {
         border-radius: 512px;
+    }
+
+    &.rect {
+        border-radius: 100px;
     }
 
     p {

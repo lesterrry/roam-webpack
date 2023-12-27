@@ -39,6 +39,11 @@ module.exports = {
                 filename: 'materials/agrotourism/index.html',
                 minify: true
             }),
+            new HtmlWebpackPlugin({
+                template: '!!haml-loader!./src/destinations/yerevan/index.haml',
+                filename: 'destinations/yerevan/index.html',
+                minify: true
+            }),
             new MiniCSSExtractPlugin()
         ],
     module:

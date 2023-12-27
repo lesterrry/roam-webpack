@@ -3,6 +3,8 @@
 
 @import 'materials/agrotourism/index.scss';
 
+@import 'destinations/yerevan/index.scss';
+
 @import 'styles/header.scss';
 @import 'styles/footer.scss';
 @import 'styles/container.scss';
@@ -95,4 +97,10 @@ section:first-of-type {
 
 .corner {
 	border-radius: 32px;
+}
+
+.centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

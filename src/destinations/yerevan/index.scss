@@ -1,0 +1,57 @@
+body#destinations-yerevan {
+    section#heading {
+        > div {
+            background-image: url('/img/yerevan2.png');
+            background-position-y: -20px;
+        }
+    }
+    
+    section#article {
+        & {
+            margin-top: 72px;
+        }
+        .container {
+            & {
+                margin-top: 60px;
+            }
+            > p {
+                margin: 0;
+                font-size: 38px;
+                width: 1200px;
+                max-width: initial;
+            }
+        }
+    }
+
+    section#more {
+        & {
+            margin-top: 100px;
+        }
+        > div {
+            > h1 {
+                margin-bottom: 28px;
+            }
+
+            > div {
+                display: flex;
+                gap: 20px;
+            }
+
+            .container::after {
+                background-size: cover;
+            }
+
+            .container:nth-child(1)::after {
+                background-image: url('/img/elderly2.png');
+            }
+
+            .container:nth-child(2)::after {
+                background-image: url('/img/kk.png');
+            }
+
+            .container:nth-child(3)::after {
+                background-image: url('/img/inta.png');
+            }
+        }
+    }
+}

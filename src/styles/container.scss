@@ -20,6 +20,9 @@
     &.roundrect::after {
         border-radius: 188px;
     }
+    &.semiroundrect::after {
+        border-radius: 88px;
+    }
     &.oval::after {
         border-radius: 50%;
     }
