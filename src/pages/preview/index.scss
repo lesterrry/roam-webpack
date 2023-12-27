@@ -1,33 +1,109 @@
-body.preview {
-    section.window {
-        img {
-            width: 100%;
-        }
-
-        > p {
-            color: var(--белый);
-            position: absolute;
-            top: 220px;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            font-size: 168px;
-            font-weight: 400;
-            letter-spacing: -6px;
-        }
-
-        > div {
-            & {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 50px;
-            }
+body#preview {
+    section#window {
+        >div {
             img {
-                width: 380px;
+                width: 100%;
             }
-            p {
-                width: 540px;
+
+            >p {
+                color: var(--белый);
+                position: absolute;
+                top: 220px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 168px;
+                font-weight: 400;
+                letter-spacing: -6px;
+            }
+
+            div {
+                & {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 50px;
+                }
+
+                img {
+                    width: 380px;
+                }
+
+                p {
+                    width: 540px;
+                }
             }
         }
     }
+
+    section#destinations {
+        & {
+            background-color: var(--черный);
+        }
+
+        >div {
+            .container:nth-of-type(2)::after {
+                background: url('./img/elderly.png');
+                background-size: cover;
+                background-position-y: -240px;
+            }
+        }
+    }
+
+    section#work {
+        & {
+            margin-top: 100px;
+            margin-bottom: 180px;
+        }
+        > div {
+            > div {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 80px;
+            }
+        }
+    }
+
+    section#materials {
+        & {
+            background-color: var(--черный);
+        }
+
+        >div {
+            .container:nth-of-type(2)::after {
+                background: url('./img/elderly.png');
+                background-size: cover;
+                background-position-y: -240px;
+            }
+        }
+    }
+
+    section#email {
+        & {
+            margin-top: 100px;
+        }
+        > div {
+            > p {
+                font-size: 40px;
+            }
+            > div {
+                & {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                    margin-top: 40px;
+                }
+                input {
+                    flex-grow: 1;
+                    width: 100%;
+                }
+                p {
+                    width: 700px;
+                    font-size: 26px;
+                    flex-shrink: 1;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
 }

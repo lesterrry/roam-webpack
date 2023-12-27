@@ -1,0 +1,24 @@
+footer {
+    & {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    > * {
+        width: 200px;
+    }
+
+    > div {
+        & {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        &:last-of-type {
+            align-items: flex-end;
+        }
+    }
+}

@@ -1,10 +1,16 @@
 @import 'pages/preview/index.scss';
 @import 'styles/header.scss';
+@import 'styles/footer.scss';
+@import 'styles/container.scss';
+@import 'styles/pill.scss';
+@import 'styles/bundle.scss';
+@import 'styles/input.scss';
 @import 'styles/fonts.scss';
 @import 'styles/media.scss';
 
 :root {
 	--белый: #D6F0FF;
+	--черный: #00141F;
 }
 
 *,
@@ -28,6 +34,10 @@ h6 {
 	line-height: 1.2;
 }
 
+p {
+	letter-spacing: -0.5px;
+}
+
 span.s {
 	font-family: 'Stezhok';
 	font-size: 165%;
@@ -42,7 +52,6 @@ body {
 
 body {
 	background-color: var(--белый);
-	height: 7000px;
 }
 
 img,
@@ -62,7 +71,7 @@ section {
 	position: relative;
 	width: 100%;
 	padding: 0 50px;
-	margin-top: 300px;
+	margin-top: 50px;
 }
 
 section:first-of-type {

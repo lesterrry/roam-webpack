@@ -1,0 +1,33 @@
+input {
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 600;
+}
+
+::-webkit-input-placeholder {
+    color: rgba($color: #00141F, $alpha: 0.2);
+}
+
+:-moz-placeholder {
+    color: rgba($color: #00141F, $alpha: 0.2);
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: rgba($color: #00141F, $alpha: 0.2);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: rgba($color: #00141F, $alpha: 0.2);
+}
+
+::-ms-input-placeholder {
+    color: rgba($color: #00141F, $alpha: 0.2);
+}
+
+::placeholder {
+    color: rgba($color: #00141F, $alpha: 0.2);
+}
+

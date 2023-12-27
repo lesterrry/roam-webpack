@@ -1,0 +1,30 @@
+.pill {
+    &.small {
+        padding: 10px 20px 10px 20px;
+        border-radius: 32px;
+        font-size: 22px;
+    }
+
+    &.large {
+        padding: 110px 66px 110px 66px;
+        border-radius: 256px;
+        font-size: 40px;
+    }
+    
+    &.border {
+        border: 1.5px solid var(--черный);
+        color: var(--черный);
+    }
+
+    &.fill {
+        background-color: var(--черный);
+        color: var(--белый);
+    }
+}
+
+input.pill {
+    height: 268px;
+    font-size: 100px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
