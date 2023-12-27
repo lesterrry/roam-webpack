@@ -41,6 +41,10 @@ h6 {
 	line-height: 1.2;
 }
 
+h1 {
+	font-size: 38px;
+}
+
 p {
 	letter-spacing: -0.05em;
 }
@@ -85,7 +89,7 @@ section:first-of-type {
 	margin-top: 80px;
 }
 
-.border, .heading, .li::after {
+.border, .heading, .li::after, *.border::after {
 	border: 1.5px solid var(--черный);
 }
 
