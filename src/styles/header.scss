@@ -7,7 +7,7 @@ header {
         margin-top: 28px;
         margin-bottom: 20px;
     }
-    a {
+    a:not(.static) {
         width: 120px;
         text-align: center;
     }

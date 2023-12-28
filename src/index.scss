@@ -1,6 +1,7 @@
 @import 'pages/preview/index.scss';
 @import 'pages/about/index.scss';
 @import 'pages/styleguide/index.scss';
+@import 'pages/work/index.scss';
 
 @import 'materials/agrotourism/index.scss';
 
@@ -52,6 +53,23 @@ p, h2 {
 	letter-spacing: -0.05em;
 }
 
+a {
+	position: relative;
+	text-decoration: none;
+	color: var(--черный)
+}
+
+a:not(.static):after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: calc(100% + 20px);
+	height: calc(100% + 20px);
+	top: -10px;
+	left: -10px;
+	border-radius: 50%;
+}
+
 span.s {
 	font-family: 'Stezhok';
 	font-size: 165%;
@@ -61,7 +79,7 @@ span.s {
 
 html,
 body {
-	// overflow: hidden;
+	overflow-x: hidden;
 }
 
 body {
@@ -71,6 +89,7 @@ body {
 img,
 svg {
 	-webkit-user-select: none;
+	user-select: none;
 }
 
 section,
@@ -92,7 +111,7 @@ section:first-of-type {
 	margin-top: 80px;
 }
 
-.border, .heading, .li::after, *.border::after {
+.border, .heading, .li::after, *.border::after, a:hover::after {
 	border: 1.5px solid var(--черный);
 }
 

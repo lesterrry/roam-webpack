@@ -20,13 +20,8 @@ module.exports = {
                 ]
             }),
             new HtmlWebpackPlugin({
-                template: '!!haml-loader!./src/index.haml',
-                filename: 'index.html',
-                minify: true
-            }),
-            new HtmlWebpackPlugin({
                 template: '!!haml-loader!./src/pages/preview/index.haml',
-                filename: 'preview/index.html',
+                filename: 'index.html',
                 minify: true
             }),
             new HtmlWebpackPlugin({
@@ -37,6 +32,11 @@ module.exports = {
             new HtmlWebpackPlugin({
                 template: '!!haml-loader!./src/pages/styleguide/index.haml',
                 filename: 'styleguide/index.html',
+                minify: true
+            }),
+            new HtmlWebpackPlugin({
+                template: '!!haml-loader!./src/pages/work/index.haml',
+                filename: 'work/index.html',
                 minify: true
             }),
             new HtmlWebpackPlugin({

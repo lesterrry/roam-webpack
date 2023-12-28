@@ -6,14 +6,15 @@
     -# %link{:rel => "icon", :type => "image/png", :href => "../static./img/icon.png"}
   %body#materials-agrotourism
     %header
-      %a профессии
-      %a направления
-      %img{src: "../img/logo.svg"}
-      %a материалы
-      %a о нас
+      %a{href: '/work'} профессии
+      %a{href: '/destinations/yerevan'} направления
+      %a.static{href: '/'}
+        %img{src: "../img/logo.svg"}
+      %a{href: '/materials/agrotourism'} материалы
+      %a{href: '/about'} о нас
     
-    %section#heading.centered
-      %div.heading.pill
+    %section#heading
+      %div.heading.pill.centered
         %p Агротуризм в Подмосковье
     
     %section#article

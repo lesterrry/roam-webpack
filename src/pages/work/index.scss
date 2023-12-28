@@ -1,0 +1,35 @@
+body#work {
+    section#title {
+        > div {
+            > p {
+                margin-top: 40px;
+                max-width: 420px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    section#jobs {
+        & {
+            background-image: url('/img/bg.svg');
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+        > div {
+            & {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            > * {
+                flex: 0 0 32%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+        }
+    }
+}

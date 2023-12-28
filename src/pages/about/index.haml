@@ -6,11 +6,12 @@
     -# %link{:rel => "icon", :type => "image/png", :href => "../static./img/icon.png"}
   %body#about
     %header
-      %a профессии
-      %a направления
-      %img{src: "../img/logo.svg"}
-      %a материалы
-      %a о нас
+      %a{href: '/work'} профессии
+      %a{href: '/destinations/yerevan'} направления
+      %a.static{href: '/'}
+        %img{src: "../img/logo.svg"}
+      %a{href: '/materials/agrotourism'} материалы
+      %a{href: '/about'} о нас
     
     %section#about
       %div
