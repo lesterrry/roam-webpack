@@ -16,7 +16,7 @@ if (windowImg) {
 
   const animate = () => {
     gsap.to({}, {
-      duration: 2,
+      duration: 3,
       onUpdate: changeSrc,
       onComplete: animate
     });
