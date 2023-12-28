@@ -1,13 +1,42 @@
-@media (min-width: 1540px) {
-    section > div, header, footer {
-        width: 1440px !important;
-        margin-left: auto;
-        margin-right: auto;
+@media (max-width: 1540px) {
+    section>div,
+    header,
+    footer {
+        width: 100% !important;
     }
-    section > div {
-        width: 1440px !important;
+    
+    .article, #article {
+        .container > p {
+            width: initial !important;
+        }
+        .strip {
+            flex-direction: column;
+        }
+        img {
+            width: 100% !important;
+        }
     }
-    header, footer {
-        width: 1540px !important;
+
+    section#more > div > div {
+        flex-direction: column;
+    }
+
+    body#preview {
+        >section#window>div>p {
+            display: none;
+        }
+        >section#work>div>div {
+            flex-direction: column;
+            gap: 50px;
+        }
+        >section#email>div>div {
+            & {
+                flex-direction: column;
+                gap: 50px;
+            }
+            p {
+                width: 100%;
+            }
+        }
     }
 }

@@ -4,6 +4,7 @@
         width: 100%;
         position: relative;
         border: none !important; 
+        overflow: hidden;
     }
     &::after {
         content: "";
