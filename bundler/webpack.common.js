@@ -35,6 +35,11 @@ module.exports = {
                 minify: true
             }),
             new HtmlWebpackPlugin({
+                template: '!!haml-loader!./src/pages/styleguide/index.haml',
+                filename: 'styleguide/index.html',
+                minify: true
+            }),
+            new HtmlWebpackPlugin({
                 template: '!!haml-loader!./src/materials/agrotourism/index.haml',
                 filename: 'materials/agrotourism/index.html',
                 minify: true

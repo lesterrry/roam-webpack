@@ -1,5 +1,6 @@
 @import 'pages/preview/index.scss';
 @import 'pages/about/index.scss';
+@import 'pages/styleguide/index.scss';
 
 @import 'materials/agrotourism/index.scss';
 
@@ -47,7 +48,7 @@ h1 {
 	font-size: 38px;
 }
 
-p {
+p, h2 {
 	letter-spacing: -0.05em;
 }
 

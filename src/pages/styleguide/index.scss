@@ -1,0 +1,36 @@
+body#styleguide {
+    section#logo {
+        & {
+            background-color: var(--черный);
+            margin-top: 0;
+            display: inline-block;
+        }
+        > div {
+            img {
+                position: relative;
+                display: block;
+                width: 100%;
+                margin-top: 60px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            div {
+                margin-top: 18px;
+                margin-bottom: 88px;
+                display: flex;
+                justify-content: space-between;
+            }
+            p {
+                color: var(--белый);
+                max-width: 400px;
+            }
+        }
+    }
+
+    section#footer {
+        img {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}

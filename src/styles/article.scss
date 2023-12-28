@@ -31,11 +31,19 @@
         padding-right: 0;
     }
 
-    h1 {
-        font-size: 44px;
+    h1, h2 {
         margin-top: 120px;
         padding-left: var(--padding);
         padding-right: var(--padding);
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 400;
     }
 
     .center {
@@ -78,6 +86,46 @@
         img {
             width: 600px;
             width: 600px;
+        }
+    }
+
+    .perk {
+        & {
+            display: flex;
+            margin-top: 110px;
+        }
+        span {
+            margin-left: 28px;
+            display: block;
+        }
+        span.small {
+            display: inline;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: -0.04em;
+        }
+        h1, h2, p {
+            margin: 0;
+            padding: 0;
+            max-width: initial;
+        }
+        > img, > div {
+            margin: 0;
+            flex: 1;
+            min-width: 0;
+        }
+        > p {
+            width: 200px;
+            flex-shrink: 0;
+        }
+        > div > img {
+            width: 100%;
+        }
+        > div > p {
+            max-width: 450px;
+        }
+        > div > * {
+            margin-bottom: 40px;
         }
     }
 }
