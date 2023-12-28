@@ -41,8 +41,12 @@ h4,
 h5,
 h6 {
 	font-family: 'Inter';
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.2;
+}
+
+h1, h2 {
+	font-weight: 400;
 }
 
 h1 {
@@ -56,18 +60,8 @@ p, h2 {
 a {
 	position: relative;
 	text-decoration: none;
-	color: var(--черный)
-}
-
-a:not(.static):after {
-	content: "";
-	position: absolute;
-	display: block;
-	width: calc(100% + 20px);
-	height: calc(100% + 20px);
-	top: -10px;
-	left: -10px;
-	border-radius: 50%;
+	color: var(--черный);
+	cursor: pointer;
 }
 
 span.s {
@@ -123,4 +117,8 @@ section:first-of-type {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.clickable {
+	cursor: pointer;
 }

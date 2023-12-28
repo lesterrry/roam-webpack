@@ -10,5 +10,17 @@ header {
     a:not(.static) {
         width: 120px;
         text-align: center;
+        font-weight: 400;
+    }
+
+    a:not(.static):after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        top: -10px;
+        left: -10px;
+        border-radius: 50%;
     }
 }

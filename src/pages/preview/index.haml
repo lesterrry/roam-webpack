@@ -15,7 +15,7 @@
 
     %section#window
       %div
-        %img{src: "/img/boy2.svg"}
+        %img#image-swap{src: '/img/boy1.svg', data-images: '/img/boy1.svg, /img/boy2.svg, /img/boy3.svg'}
         %p 
           ок
           %span.s н
@@ -37,7 +37,7 @@
             пра
             %span.s в
             ления
-        .container.rect.white.card
+        .container.rect.white.card.clickable{onclick: 'window.location.href = "/materials/agrotourism"'}
           %div
             %p.pill.border.small Москва
             %p.pill.border.small Агротуризм
@@ -62,7 +62,7 @@
             ма
             %span.s т
             ериалы
-        .container.rect.white.card
+        .container.rect.white.card.clickable{onclick: 'window.location.href = "/destinations/yerevan"'}
           %div
             %p.pill.border.small Армения
           %p Ереван
