@@ -4,7 +4,9 @@
     footer {
         width: 100% !important;
     }
-    
+}
+
+@media (max-width: 1240px) {
     .article, #article {
         .container > p {
             width: initial !important;
