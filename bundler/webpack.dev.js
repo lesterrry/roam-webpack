@@ -19,7 +19,7 @@ module.exports = merge(
             //host: 'localhost',
             host: 'local-ip',
             port: portFinderSync.getPort(8080),
-            open: true,
+            open: false,
             https: false,
             allowedHosts: 'all',
             hot: false,

@@ -2,6 +2,35 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
+const glob = require('glob');
+
+const PAGES = ['work', 'about', 'styleguide'];
+
+const generateHtmlPlugins = (folderName, usePrefix) => {
+    const templateFiles = glob.sync(path.resolve(__dirname, `../src/${folderName}/**/*.haml`));
+
+    return templateFiles.map(item => {
+        const parts = item.split('/');
+        const name = parts[parts.length - 2];
+
+        console.log('template', '!!haml-loader!' + item)
+        console.log('name', `${usePrefix ? folderName : ''}${name}/index.html`)
+
+        return new HtmlWebpackPlugin({
+            template: '!!haml-loader!' + item,
+            filename: `${usePrefix ? folderName + '/' : ''}${name}/index.html`,
+            minify: true,
+        });
+    });
+}
+
+let generatedPlugins = [];
+
+PAGES.forEach(folder => generatedPlugins.push(...generateHtmlPlugins(`pages/${folder}`, false)));
+
+generatedPlugins.push(...generateHtmlPlugins(`destinations`, true));
+
+generatedPlugins.push(...generateHtmlPlugins(`materials`, true));
 
 module.exports = {
     entry: path.resolve(__dirname, '../src/script.js'),
@@ -19,36 +48,15 @@ module.exports = {
                     { from: path.resolve(__dirname, '../static') }
                 ]
             }),
+
             new HtmlWebpackPlugin({
                 template: '!!haml-loader!./src/pages/preview/index.haml',
                 filename: 'index.html',
                 minify: true
             }),
-            new HtmlWebpackPlugin({
-                template: '!!haml-loader!./src/pages/about/index.haml',
-                filename: 'about/index.html',
-                minify: true
-            }),
-            new HtmlWebpackPlugin({
-                template: '!!haml-loader!./src/pages/styleguide/index.haml',
-                filename: 'styleguide/index.html',
-                minify: true
-            }),
-            new HtmlWebpackPlugin({
-                template: '!!haml-loader!./src/pages/work/index.haml',
-                filename: 'work/index.html',
-                minify: true
-            }),
-            new HtmlWebpackPlugin({
-                template: '!!haml-loader!./src/materials/agrotourism/index.haml',
-                filename: 'materials/agrotourism/index.html',
-                minify: true
-            }),
-            new HtmlWebpackPlugin({
-                template: '!!haml-loader!./src/destinations/yerevan/index.haml',
-                filename: 'destinations/yerevan/index.html',
-                minify: true
-            }),
+            
+            ...generatedPlugins,
+
             new MiniCSSExtractPlugin()
         ],
     module:

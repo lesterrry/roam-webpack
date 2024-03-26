@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "glob": "^10.3.10",
     "haml-loader": "^0.1.0",
     "html-loader": "^4.2.0",
     "sass": "^1.69.5",
