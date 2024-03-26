@@ -1,25 +1,13 @@
-body#destinations-yerevan {
+body.materials {
     section#heading {
         > div {
-            background-image: url('/img/yerevan2.png');
-            background-position-y: -20px;
+            // background-image: url('/img/elderly2.png');
         }
     }
     
     section#article {
         & {
-            margin-top: 72px;
-        }
-        .container {
-            & {
-                margin-top: 60px;
-            }
-            > p {
-                margin: 0;
-                font-size: 38px;
-                width: 1200px;
-                max-width: initial;
-            }
+            margin-top: 28px;
         }
     }
 

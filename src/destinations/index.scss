@@ -1,13 +1,25 @@
-body#materials-agrotourism {
+body.destinations {
     section#heading {
         > div {
-            background-image: url('/img/elderly2.png');
+            // background-image: url('/img/yerevan2.png');
+            // background-position-y: -20px;
         }
     }
     
     section#article {
         & {
-            margin-top: 28px;
+            margin-top: 72px;
+        }
+        .container {
+            & {
+                margin-top: 60px;
+            }
+            > p {
+                margin: 0;
+                font-size: 38px;
+                width: 1200px;
+                max-width: initial;
+            }
         }
     }
 
