@@ -7,10 +7,6 @@ body#materials {
         border-color: var(--белый);
     }
 
-    .pill:hover {
-        background-color: rgba(214, 240, 255, 0.2);
-    }
-
     section#title {
         > div {
             > p {
@@ -20,6 +16,12 @@ body#materials {
                 margin-left: auto;
                 margin-right: auto;
             }
+        }
+    }
+
+    section#taglist {
+        .pill:hover {
+            background-color: rgba(214, 240, 255, 0.2);
         }
     }
 

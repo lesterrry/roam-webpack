@@ -1,4 +1,53 @@
 body#work {
+    .overlay#job-details {
+        & {
+            background-color: var(--черный);
+            background-image: url('/img/bg.svg');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+
+        > div {
+            & {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: var(--белый);
+                width: 700px;
+                height: 360px;
+                border-radius: 44px;
+                padding: 55px 45px;
+            }
+    
+            > p {
+                font-size: 36px;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+    
+            > div {
+                & {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    margin-top: 40px;
+                }
+    
+                > p {
+                    & {
+                        font-size: 19px;
+                    }
+    
+                    &:first-child {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+    
     section#title {
         > div {
             > p {

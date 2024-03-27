@@ -8,13 +8,36 @@ header {
         margin-bottom: 20px;
     }
 
+    div {
+        position: absolute;
+        right: 0;
+        height: 28px;
+        width: 28px;
+        background-size: cover;
+        cursor: pointer;
+        background-image: url('/img/search.svg');
+    }
+
     &.white {
         a {
             color: var(--белый);
         }
+
         a:hover::after {
             border-color: var(--белый);
         }
+
+        div {
+            background-image: url('/img/search_w.svg');
+        }
+    }
+
+    a:last-of-type {
+        margin-right: 40px;
+    }
+
+    a:nth-last-of-type(2) {
+        margin-left: -40px;
     }
     
     a:not(.static) {

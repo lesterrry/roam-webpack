@@ -1,33 +1,64 @@
 input {
-    border: none;
-    outline: none;
-    background: none;
-    font-weight: 600;
-}
+    & {
+        border: none;
+        outline: none;
+        background: none;
+        font-weight: 600;
+    }
+    &.black {
+        &::-webkit-input-placeholder {
+            color: rgba($color: #00141F, $alpha: 0.2);
+        }
+        
+        &:-moz-placeholder {
+            color: rgba($color: #00141F, $alpha: 0.2);
+            opacity: 1;
+        }
+        
+        &::-moz-placeholder {
+            color: rgba($color: #00141F, $alpha: 0.2);
+            opacity: 1;
+        }
+        
+        &:-ms-input-placeholder {
+            color: rgba($color: #00141F, $alpha: 0.2);
+        }
+        
+        &::-ms-input-placeholder {
+            color: rgba($color: #00141F, $alpha: 0.2);
+        }
+        
+        &::placeholder {
+            color: rgba($color: #00141F, $alpha: 0.2);
+        }
+    }
 
-::-webkit-input-placeholder {
-    color: rgba($color: #00141F, $alpha: 0.2);
-}
-
-:-moz-placeholder {
-    color: rgba($color: #00141F, $alpha: 0.2);
-    opacity: 1;
-}
-
-::-moz-placeholder {
-    color: rgba($color: #00141F, $alpha: 0.2);
-    opacity: 1;
-}
-
-:-ms-input-placeholder {
-    color: rgba($color: #00141F, $alpha: 0.2);
-}
-
-::-ms-input-placeholder {
-    color: rgba($color: #00141F, $alpha: 0.2);
-}
-
-::placeholder {
-    color: rgba($color: #00141F, $alpha: 0.2);
+    &.white {
+        &::-webkit-input-placeholder {
+            color: rgba($color: #FFFFFF, $alpha: 0.5);
+        }
+        
+        &:-moz-placeholder {
+            color: rgba($color: #FFFFFF, $alpha: 0.5);
+            opacity: 1;
+        }
+        
+        &::-moz-placeholder {
+            color: rgba($color: #FFFFFF, $alpha: 0.5);
+            opacity: 1;
+        }
+        
+        &:-ms-input-placeholder {
+            color: rgba($color: #FFFFFF, $alpha: 0.5);
+        }
+        
+        &::-ms-input-placeholder {
+            color: rgba($color: #FFFFFF, $alpha: 0.5);
+        }
+        
+        &::placeholder {
+            color: rgba($color: #FFFFFF, $alpha: 0.5);
+        }
+    }
 }
 

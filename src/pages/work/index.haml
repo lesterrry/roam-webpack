@@ -5,8 +5,8 @@
     %title roam.me
     %link{:rel => "icon", :type => "image/png", :href => "/img/icon.png"}
   %body#work
-    %div.overlay
-      %img{src: "/img/arrow.svg"}
+    %div.overlay#job-details
+      %img.clickable{src: "/img/arrow.svg"}
       %div
         %p Веб-разработчик
         %div
@@ -36,6 +36,7 @@
             %br/
             креативность, владение программами, тайм-менеджмент
 
+    
     %header
       %a{href: '/work'} работа
       %a{href: '/destinations'} направления
@@ -43,6 +44,7 @@
         %img{src: "/img/logo4.svg"}
       %a{href: '/materials'} материалы
       %a{href: '/about'} о нас
+      %div
 
     %section#title
       %div
@@ -55,18 +57,18 @@
 
     %section#jobs
       %div
-        %p.pill.fill.black.large предприниматель
-        %p.pill.fill.black.large веб-разработчик
-        %p.pill.fill.black.large программист
-        %p.pill.fill.black.large smm-специалист
-        %p.pill.fill.black.large дизайнер
-        %p.pill.fill.black.large репетитор
-        %p.pill.fill.black.large фотограф
-        %p.pill.fill.black.large разработчик
-        %p.pill.fill.black.large видеограф
-        %p.pill.fill.black.large редактор
-        %p.pill.fill.black.large блоггер
-        %p.pill.fill.black.large журналист
+        %p.pill.fill.black.large.clickable предприниматель
+        %p.pill.fill.black.large.clickable веб-разработчик
+        %p.pill.fill.black.large.clickable программист
+        %p.pill.fill.black.large.clickable smm-специалист
+        %p.pill.fill.black.large.clickable дизайнер
+        %p.pill.fill.black.large.clickable репетитор
+        %p.pill.fill.black.large.clickable фотограф
+        %p.pill.fill.black.large.clickable разработчик
+        %p.pill.fill.black.large.clickable видеограф
+        %p.pill.fill.black.large.clickable редактор
+        %p.pill.fill.black.large.clickable блоггер
+        %p.pill.fill.black.large.clickable журналист
 
     %footer
       %div

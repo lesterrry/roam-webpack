@@ -1,8 +1,8 @@
 import $ from 'jquery';
 
-const $overlay = $('.overlay');
-const $overlayTitle = $('.overlay > div > p');
-const $overlayArrow = $('.overlay > img');
+const $overlay = $('.overlay#job-details');
+const $overlayTitle = $('.overlay#job-details > div > p');
+const $overlayArrow = $('.overlay#job-details > img');
 const $target = $('section#jobs *');
 
 $target.on('click', (e) => {
