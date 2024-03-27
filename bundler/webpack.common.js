@@ -1,7 +1,7 @@
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
-const path = require('path')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 const glob = require('glob');
 
 const TOP_LEVEL_PAGES = ['work', 'about', 'styleguide', 'destinations'];
@@ -97,7 +97,8 @@ module.exports = {
                     test: /\.(sa|sc|c)ss$/,
                     use:
                         [
-                            'style-loader',
+                            MiniCSSExtractPlugin.loader,
+                            // 'style-loader',
                             { loader: 'css-loader', options: { url: false } },
                             'sass-loader'
                         ]
