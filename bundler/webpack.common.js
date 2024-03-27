@@ -4,7 +4,7 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const glob = require('glob');
 
-const TOP_LEVEL_PAGES = ['work', 'about', 'styleguide', 'destinations'];
+const TOP_LEVEL_PAGES = ['work', 'about', 'styleguide', 'destinations', 'materials'];
 
 const generateHtmlPlugins = (folderName, usePrefix) => {
     const templateFiles = glob.sync(path.resolve(__dirname, `../src/${folderName}/**/*.haml`));
@@ -66,10 +66,9 @@ module.exports = {
                 // HTML
                 {
                     test: /\.(html)$/,
-                    use:
-                        [
-                            'html-loader'
-                        ]
+                    use: [
+                        'html-loader'
+                    ]
                 },
 
                 // HAML
@@ -86,22 +85,19 @@ module.exports = {
                 {
                     test: /\.js$/,
                     exclude: /node_modules/,
-                    use:
-                        [
-                            'babel-loader'
-                        ]
+                    use: [
+                        'babel-loader'
+                    ]
                 },
 
                 // CSS
                 {
                     test: /\.(sa|sc|c)ss$/,
-                    use:
-                        [
-                            MiniCSSExtractPlugin.loader,
-                            // 'style-loader',
-                            { loader: 'css-loader', options: { url: false } },
-                            'sass-loader'
-                        ]
+                    use: [
+                        MiniCSSExtractPlugin.loader,
+                        { loader: 'css-loader', options: { url: false } },
+                        'sass-loader'
+                    ]
                 },
 
                 // Images

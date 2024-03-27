@@ -6,6 +6,12 @@ footer {
         margin-bottom: 20px;
     }
 
+    &.white {
+        a {
+            color: var(--белый);
+        }
+    }
+
     > * {
         width: 200px;
     }

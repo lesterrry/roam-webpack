@@ -3,6 +3,7 @@
 @import 'pages/styleguide/index.scss';
 @import 'pages/work/index.scss';
 @import 'pages/destinations/index.scss';
+@import 'pages/materials/index.scss';
 
 @import 'materials/index.scss';
 
@@ -65,6 +66,10 @@ a {
 	text-decoration: none;
 	color: var(--черный);
 	cursor: pointer;
+}
+
+p.white {
+	color: var(--белый);
 }
 
 span.s {

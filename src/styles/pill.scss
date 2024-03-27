@@ -26,6 +26,10 @@
         background-color: var(--черный);
         color: var(--белый);
     }
+
+    &.transparent {
+        background-color: transparent;
+    }
 }
 
 input.pill {
