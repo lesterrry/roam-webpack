@@ -60,6 +60,22 @@ body#main {
                 min-width: 460px;
             }
         }
+
+        .container::after {
+            background-size: cover;
+        }
+
+        .container:nth-child(1)::after {
+            background-image: url('/img/elderly2.png');
+        }
+
+        .container:nth-child(2)::after {
+            background-image: url('/img/kk.png');
+        }
+
+        .container:nth-child(3)::after {
+            background-image: url('/img/inta.png');
+        }
     }
 
     section#jobs {
@@ -69,10 +85,6 @@ body#main {
                 margin-left: -220px;
             }
         }
-    }
-
-    section#cities {
-
     }
 
     section#email {

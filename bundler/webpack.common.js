@@ -13,8 +13,8 @@ const generateHtmlPlugins = (folderName, usePrefix) => {
         const parts = item.split('/');
         const name = parts[parts.length - 2];
 
-        console.log('template', '!!haml-loader!' + item)
-        console.log('name', `${usePrefix ? folderName : ''}${name}/index.html`)
+        console.info('  template', '!!haml-loader!' + item)
+        console.info('  name', `${usePrefix ? folderName : ''}/${name}/index.html`)
 
         return new HtmlWebpackPlugin({
             template: '!!haml-loader!' + item,

@@ -6,6 +6,7 @@ body#about {
                 flex-direction: row;
                 justify-content: space-between;
             }
+
             > div {
                 & {
                     display: flex;
@@ -24,6 +25,7 @@ body#about {
                     margin-left: 200px;
                 }
             }
+
             img {
                 width: 500px;
                 height: 400px;
@@ -36,6 +38,24 @@ body#about {
         & {
             margin-top: 100px;
             background-color: var(--черный);
+        }
+
+        > div {
+            & {
+                gap: 0;
+            }
+
+            .container {
+                scale: 0.75;
+            }
+
+            .container:first-of-type {
+                margin-left: -200px;
+            }
+
+            .container:last-of-type {
+                margin-left: 200px;
+            }
         }
     }
 }
