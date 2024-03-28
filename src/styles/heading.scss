@@ -3,6 +3,9 @@
         height: 600px;
         background-size: cover;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 
     &.pill {
@@ -18,5 +21,9 @@
         text-align: center;
         line-height: 1;
         font-weight: 400;
+    }
+
+    p.caption {
+        font-size: 32px;
     }
 }
