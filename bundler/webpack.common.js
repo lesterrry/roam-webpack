@@ -4,7 +4,7 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const glob = require('glob');
 
-const TOP_LEVEL_PAGES = ['work', 'about', 'styleguide', 'destinations', 'materials'];
+const TOP_LEVEL_PAGES = ['work', 'destinations', 'materials', 'about', 'styleguide', 'preview'];
 
 const generateHtmlPlugins = (folderName, usePrefix) => {
     const templateFiles = glob.sync(path.resolve(__dirname, `../src/${folderName}/**/*.haml`));
@@ -50,7 +50,7 @@ module.exports = {
             }),
 
             new HtmlWebpackPlugin({
-                template: '!!haml-loader!./src/pages/preview/index.haml',
+                template: '!!haml-loader!./src/pages/main/index.haml',
                 filename: 'index.html',
                 minify: true
             }),

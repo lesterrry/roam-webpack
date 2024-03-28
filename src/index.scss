@@ -4,6 +4,7 @@
 @import 'pages/work/index.scss';
 @import 'pages/destinations/index.scss';
 @import 'pages/materials/index.scss';
+@import 'pages/main/index.scss';
 
 @import 'materials/index.scss';
 
@@ -21,6 +22,8 @@
 @import 'styles/fonts.scss';
 @import 'styles/media.scss';
 @import 'styles/overlay.scss';
+@import 'styles/scroller.scss';
+@import 'styles/globe.scss';
 
 :root {
 	--белый: #D6F0FF;
@@ -80,6 +83,28 @@ span.s {
 	margin-right: -0.1em;
 }
 
+a.bottom-link {
+	& {
+		font-size: 18px;
+		text-decoration: underline;
+	}
+
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 20px;
+		height: 25px;
+		margin-left: 6px;
+		background-image: url('/img/side-arrow.svg');
+		background-position-y: 8px;
+		background-repeat: no-repeat;
+	}
+
+	&:hover::after {
+		border: none;
+	}
+}
+
 html,
 body {
 	// overflow-x: hidden;
@@ -107,6 +132,10 @@ section {
 	position: relative;
 	padding: 0 50px;
 	margin-top: 50px;
+}
+
+section.small {
+	margin-top: 20px;
 }
 
 section > div, header, footer {

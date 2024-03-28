@@ -1,4 +1,4 @@
-body#preview {
+body#main {
     section#window {
         > div {
             > p {
@@ -36,46 +36,43 @@ body#preview {
         }
     }
 
-    section#destinations {
+    section#overview, section#cities {
         & {
-            background-color: var(--черный);
+            overflow-x: scroll;
+        }
+
+        &::-moz-scrollbar {
+            display: none;
+        }   
+        
+        &::-webkit-scrollbar {
+            display: none;
         }
 
         > div {
-            .container:nth-of-type(2)::after {
-                background: url('/img/elderly.png');
-                background-size: cover;
-                background-position-y: -240px;
-            }
-        }
-    }
-
-    section#work {
-        & {
-            margin-top: 100px;
-            margin-bottom: 180px;
-        }
-        > div {
-            > div {
+            & {
                 display: flex;
-                justify-content: space-between;
-                margin-top: 80px;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .card {
+                min-width: 460px;
             }
         }
     }
 
-    section#materials {
-        & {
-            background-color: var(--черный);
-        }
-
-        > div {
-            .container:nth-of-type(2)::after {
-                background: url('/img/yerevan.png');
-                background-size: cover;
-                background-position-y: -240px;
+    section#jobs {
+        .scroller {
+            > div {
+                align-items: flex-end;
+                margin-left: -220px;
             }
         }
+    }
+
+    section#cities {
+
     }
 
     section#email {

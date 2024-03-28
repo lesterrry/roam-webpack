@@ -1,0 +1,43 @@
+@keyframes infinite-scroll {
+    from {
+        margin-top: 0px;
+    }
+
+    to {
+        margin-top: -600px;
+    }
+}
+
+.scroller {
+    & {
+        border-radius: 80px;
+        height: 580px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    > p {
+        margin-top: 50px;
+        margin-left: 60px;
+        font-size: 26px;
+    }
+    > div {
+        & {
+            display: flex;
+            flex-direction: column;
+            width: 1050px;
+            animation: infinite-scroll 3s linear infinite;
+        }
+        &:hover {
+            animation-play-state: paused;
+            }
+        p {
+            font-weight: 400;
+            margin-top: -24px;
+            font-size: 92px;
+        }
+        p:first-of-type {
+            margin-top: -8px;
+        }
+    }
+}
