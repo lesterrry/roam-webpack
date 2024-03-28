@@ -76,6 +76,10 @@ body#main {
         .container:nth-child(3)::after {
             background-image: url('/img/inta.png');
         }
+
+        .container:nth-child(4)::after {
+            background-image: url('/img/nsb.png');
+        }
     }
 
     section#jobs {

@@ -6,7 +6,29 @@
     }
 }
 
+@media (max-width: 1440px) {
+    body#preview, body#main {
+        >section#window>div>p {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 1240px) {
+    header {
+        & {
+            justify-content: flex-start;
+        }
+
+        a.static {
+            margin-left: -18px;
+        }
+
+        a:not(.static), div {
+            display: none;
+        }
+    }
+
     .article, #article {
         .container > p {
             width: initial !important;
@@ -24,9 +46,6 @@
     }
 
     body#preview {
-        >section#window>div>p {
-            display: none;
-        }
         >section#work>div>div {
             flex-direction: column;
             gap: 50px;
@@ -38,6 +57,83 @@
             }
             p {
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    footer {
+        img {
+            display: none;
+        }
+    }
+
+    .heading {
+        p {
+            font-size: 38px;
+        }
+
+        p.caption {
+            font-size: 18px;
+        }
+    }
+
+    .tags {
+        & {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        > p {
+            scale: 0.75;
+            width: fit-content;
+            margin: -20px;
+        }
+    }
+
+    .card, .globe {
+        scale: 0.75;
+        margin: -50px;
+        width: initial;
+    }
+
+    #article {
+        .strip, h1 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        h1 {
+            font-size: 38px;
+        }
+    }
+
+    .scroller {
+        p {
+            // font-size: 48px !important;
+        }
+    }
+
+    section#email {
+        > div > div {
+            flex-direction: column;
+        }
+
+        p {
+            width: 100% !important;
+        }
+    }
+
+    body#main {
+        section#window {
+            > div > p, > div > div > img {
+                display: none;
+            }
+
+            > div > div > p {
+                font-size: 24px;
             }
         }
     }

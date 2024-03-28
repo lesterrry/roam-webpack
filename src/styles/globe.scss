@@ -12,6 +12,7 @@
         border: 1px solid black;
         border-radius: 50%;
         text-align: center;
+        background-size: cover;
     }
 
     &.small {
@@ -23,6 +24,7 @@
     }
 
     &:hover {
-        background-size: 105%;
+        background-color: var(--белый);
+        background-image: none !important;
     }
 }

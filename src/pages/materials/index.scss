@@ -65,6 +65,18 @@ body#materials {
             .container:nth-child(3)::after {
                 background-image: url('/img/inta.png');
             }
+
+            .container:nth-child(4)::after {
+                background-image: url('/img/nsb.png');
+            }
+    
+            .container:nth-child(5)::after {
+                background-image: url('/img/ekb.png');
+            }
+    
+            .container:nth-child(6)::after {
+                background-image: url('/img/nn.png');
+            }
         }
     }
 
