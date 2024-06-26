@@ -1,5 +1,9 @@
 import $ from 'jquery';
 
+// const SEARCHABLE = {
+//     ''
+// };
+
 $(() => {
     let $searchButton = $('header > div');
 
@@ -9,6 +13,10 @@ $(() => {
         `<div id="search" class="overlay dimming search">
         <div>
         <input class="pill border medium white" type="text" placeholder="Поиск" autofocus>
+        <div class="pill medium">
+        <a>Прикол номер один</a>
+        <a>Прикол номер два</a>
+        </div>
         </div>
         </div>`
     );
@@ -19,7 +27,6 @@ $(() => {
     console.log($overlay)
     
     $searchButton.on('click', (e) => {
-        console.log('A!')
         $overlay.css('display', 'block');
         $input.focus();
     });

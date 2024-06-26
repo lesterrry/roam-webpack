@@ -15,21 +15,50 @@
         }
 
         > div {
-            > .pill {
+            & {
                 position: absolute;
-                top: 30%;
+                margin-top: 225px;
                 left: 50%;
                 width: 800px;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, 0);
+            }
+
+            > input.pill {
+                width: 100%;
                 background-color: rgba($color: #FFFFFF, $alpha: 0.25);
                 border: none;
                 border-radius: 44px;
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
-            }
-            
-            input {
                 color: white;
+            }
+
+            > div {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                background-color: white;
+                border-radius: 44px;
+                max-height: 175px;
+                overflow-y: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            > div::-webkit-scrollbar {
+                display: none;
+            }            
+
+            a::after {
+                content: "←";
+                margin-left: 10px;
+                display: none;
+            }
+
+            a:hover::after {
+                border: none;
+                display: inline;
             }
         }
     }
