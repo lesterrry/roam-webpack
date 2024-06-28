@@ -16,22 +16,21 @@
 
     %section#taglist
       %div.tags
-        %p.pill.fill.border.small.clickable Все
-        %p.pill.border.small.clickable Советы
-        %p.pill.border.small.clickable Беларусь
-        %p.pill.border.small.clickable Россия
-        %p.pill.border.small.clickable Армения
-        %p.pill.border.small.clickable Турция
-        %p.pill.border.small.clickable Узбекистан
-        %p.pill.border.small.clickable Казахстан
-        %p.pill.border.small.clickable Сербия
-        %p.pill.border.small.clickable Грузия
+        %p.pill.fill.border.small.clickable.filter#all Все
+        %p.pill.border.small.clickable.filter#by Беларусь
+        %p.pill.border.small.clickable.filter#ru Россия
+        %p.pill.border.small.clickable.filter Армения
+        %p.pill.border.small.clickable.filter Турция
+        %p.pill.border.small.clickable.filter Узбекистан
+        %p.pill.border.small.clickable.filter Казахстан
+        %p.pill.border.small.clickable.filter Сербия
+        %p.pill.border.small.clickable.filter Грузия
 
     %section#list
       %div
-        %div
+        %div.filterable
           %a{ href: '/destinations/yerevan' } Ереван
-          %a{ href: '/destinations/yerevan' } Адлер
+          %a{ href: '/destinations/adler' } Адлер
           %a{ href: '/destinations/yerevan' } Алматы
           %a{ href: '/destinations/yerevan' } Батуми
           %a{ href: '/destinations/yerevan' } Белград

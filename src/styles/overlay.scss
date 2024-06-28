@@ -27,20 +27,20 @@
                 width: 100%;
                 background-color: rgba($color: #FFFFFF, $alpha: 0.25);
                 border: none;
-                border-radius: 44px;
+                border-radius: 32px;
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
                 color: white;
             }
 
             > div {
+                display: none;
                 margin-top: 20px;
-                display: flex;
                 flex-direction: column;
                 gap: 14px;
                 background-color: white;
-                border-radius: 44px;
-                max-height: 175px;
+                border-radius: 32px;
+                max-height: 184px;
                 overflow-y: scroll;
                 -ms-overflow-style: none;
                 scrollbar-width: none;
@@ -48,7 +48,11 @@
 
             > div::-webkit-scrollbar {
                 display: none;
-            }            
+            }
+            
+            .secondary {
+                opacity: 60%;
+            }
 
             a::after {
                 content: "←";
