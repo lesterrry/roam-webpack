@@ -7,6 +7,12 @@
 }
 
 @media (max-width: 1440px) {
+    section#all-materials, section#all-destinations, section#jobs {
+        > div {
+            justify-content: center !important;
+        }
+    }
+
     body#preview, body#main {
         >section#window>div>p {
             display: none;
@@ -135,6 +141,16 @@
 
         p {
             width: 100% !important;
+        }
+    }
+
+    section#title {
+        .container p {
+            font-size: 60px !important;
+            top: 140px;
+            left: 0;
+            width: 100%;
+            letter-spacing: initial;
         }
     }
 
