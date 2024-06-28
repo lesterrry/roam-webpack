@@ -111,8 +111,20 @@
     }
 
     .scroller {
-        p {
-            // font-size: 48px !important;
+        & {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        > div {
+            animation: none !important;
+            margin-left: 10px !important;
+            align-items: start !important;
+            gap: 20px;
+        }
+
+        > div > p {
+            font-size: 38px !important;
         }
     }
 
@@ -123,6 +135,50 @@
 
         p {
             width: 100% !important;
+        }
+    }
+
+    body#about {
+        section#about {
+            > div {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            > div > div {
+                gap: 20px;
+            }
+
+            > div > div p:first-of-type {
+                font-size: 68px;
+                line-height: 80px;
+            }
+
+            p.pill {
+                width: fit-content !important;
+                margin: 0 !important;
+                border-radius: 56px;
+            }
+
+            img {
+                width: auto !important;
+                height: auto !important;
+                border-radius: 56px !important;
+            }
+        }
+
+        section#profiles {
+            > div .container {
+                margin: 0 !important;
+            }
+
+            > div .container p {
+                font-size: 60px;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                margin-top: 80px;
+            }
         }
     }
 

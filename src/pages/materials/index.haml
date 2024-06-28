@@ -25,9 +25,10 @@
 
     %section#taglist
       %div.tags
-        %p.pill.border.fill.small.clickable.filter#all Все
+        %p.pill.border.fill.small.clickable.filter#filter-all Все
         %p.pill.border.small.clickable.filter Советы
         %p.pill.border.small.clickable.filter Приколы
+        %p.pill.border.small.clickable.filter#filter-tour Туризм
         %p.pill.border.small.clickable.filter Россия
         %p.pill.border.small.clickable.filter СНГ
         %p.pill.border.small.clickable.filter Деньги
@@ -35,13 +36,13 @@
         %p.pill.border.small.clickable.filter Интервью
         %p.pill.border.small.clickable.filter Фотожурналистика
     %section#all-materials
-      %div
+      %div.filterable
         %a.container.rect.white.card.clickable{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Москва
             %p.pill.transparent.border.small Агротуризм
           %p Агротуризм в Подмосковье
-        %a.container.rect.white.card.clickable{ href: '/materials/agrotourism' }
+        %a.container.rect.white.card.clickable.filter-tour{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Москва
             %p.pill.transparent.border.small Туризм
@@ -87,7 +88,7 @@
         %a{href: '/destinations'} направления
         %a{href: '/work'} работа
         %a{href: '/materials'} материалы
-      %img{src: '/img/logo5.svg'}
+      %img{src: "/img/logo.svg"}
       %div
         %a{href: '/tg'} telegram
-        %a{href: '/ig'} instagram
+        %a{href: '/inst'} instagram
