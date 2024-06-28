@@ -15,8 +15,10 @@ $('.filter').on('click', (event) => {
 
         var id = clickedElement.attr('id');
 
-        if (id === 'all') $(FILTERABLE).removeAttr('style');
-        console.log(id)
+        if (id === 'filter-all') {
+            $(FILTERABLE).removeAttr('style');
+            return;
+        }
 
         var divChildren = $(FILTERABLE);
 

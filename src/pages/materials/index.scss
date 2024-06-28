@@ -1,10 +1,11 @@
 body#materials {
-    & {
+    &, .pill {
         background-color: var(--черный);
     }
 
     .border {
         border-color: var(--белый);
+        color: var(--белый);;
     }
 
     section#title {
@@ -23,6 +24,11 @@ body#materials {
         .pill:hover {
             background-color: rgba(214, 240, 255, 0.2);
         }
+
+        .pill.fill {
+            background-color: var(--белый);
+            color: var(--черный);
+        }
     }
 
     section#all-materials {
@@ -36,6 +42,8 @@ body#materials {
 
             .pill {
                 border-color: var(--черный);
+                color: var(--черный);
+                background-color: transparent;
             }
 
             .container {
