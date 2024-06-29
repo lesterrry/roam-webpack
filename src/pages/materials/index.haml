@@ -26,51 +26,51 @@
     %section#taglist
       %div.tags
         %p.pill.border.fill.small.clickable.filter#filter-all Все
-        %p.pill.border.small.clickable.filter Советы
-        %p.pill.border.small.clickable.filter Приколы
+        %p.pill.border.small.clickable.filter#filter-adv Советы
+        %p.pill.border.small.clickable.filter#filter-fun Приколы
         %p.pill.border.small.clickable.filter#filter-tour Туризм
-        %p.pill.border.small.clickable.filter Россия
-        %p.pill.border.small.clickable.filter СНГ
-        %p.pill.border.small.clickable.filter Деньги
-        %p.pill.border.small.clickable.filter Культура
-        %p.pill.border.small.clickable.filter Интервью
-        %p.pill.border.small.clickable.filter Фотожурналистика
+        %p.pill.border.small.clickable.filter#filter-rus Россия
+        %p.pill.border.small.clickable.filter#filter-cis СНГ
+        %p.pill.border.small.clickable.filter#filter-money Деньги
+        %p.pill.border.small.clickable.filter#filter-culture Культура
+        %p.pill.border.small.clickable.filter#filter-talk Интервью
+        %p.pill.border.small.clickable.filter#filter-photoj Фотожурналистика
     %section#all-materials
       %div.filterable
-        %a.container.rect.white.card.clickable{ href: '/materials/agrotourism' }
+        %a.container.rect.white.card.clickable.filter-fun.filter-rus{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Москва
             %p.pill.transparent.border.small Агротуризм
           %p Агротуризм в Подмосковье
-        %a.container.rect.white.card.clickable.filter-tour{ href: '/materials/agrotourism' }
+        %a.container.rect.white.card.clickable.filter-tour.filter-adv.filter-cis.filter-money{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Москва
             %p.pill.transparent.border.small Туризм
           %p Гайд: работа в Казахстане
-        %a.container.rect.white.card.clickable{ href: '/materials/agrotourism' }
+        %a.container.rect.white.card.clickable.filter-adv.filter-rus{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Россия
             %p.pill.transparent.border.small Деньги
           %p Инта: купить квартиру за 30.000
-        %a.container.rect.white.card.clickable{ href: '/materials/agrotourism' }
+        %a.container.rect.white.card.clickable.filter-rus.filter-culture.filter-photoj{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Россия
             %p.pill.transparent.border.small Туризм
           %p Что делать в Екатеринбурге
-        %a.container.rect.white.card.clickable{ href: '/materials/agrotourism' }
+        %a.container.rect.white.card.clickable.filter-adv.filter-money{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Деньги
           %p Фриланс и налоги: как не ошибиться
-        %a.container.rect.white.card.clickable{ href: '/materials/agrotourism' }
+        %a.container.rect.white.card.clickable.filter-money{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Технологии
             %p.pill.transparent.border.small Деньги
           %p Гайд: как заработать в WEB3
-        %a.container.rect.white.card.clickable{ href: '/materials/agrotourism' }
+        %a.container.rect.white.card.clickable.filter-adv.filter-talk{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Москва
             %p.pill.transparent.border.small Агротуризм
-          %p Агротуризм в Подмосковье
+          %p Ворк-лайф баланс на дистанционке
         %a.container.rect.white.card.clickable{ href: '/materials/agrotourism' }
           %div
             %p.pill.transparent.border.small Москва

@@ -209,4 +209,12 @@
             }
         }
     }
+
+    body#destinations-all {
+        section#list {
+            img {
+                display: none;
+            }
+        }
+    }
 }

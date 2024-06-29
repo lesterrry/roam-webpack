@@ -19,26 +19,29 @@
         %p.pill.fill.border.small.clickable.filter#filter-all Все
         %p.pill.border.small.clickable.filter#filter-by Беларусь
         %p.pill.border.small.clickable.filter#filter-ru Россия
-        %p.pill.border.small.clickable.filter Армения
-        %p.pill.border.small.clickable.filter Турция
-        %p.pill.border.small.clickable.filter Узбекистан
-        %p.pill.border.small.clickable.filter Казахстан
-        %p.pill.border.small.clickable.filter Сербия
-        %p.pill.border.small.clickable.filter Грузия
+        %p.pill.border.small.clickable.filter#filter-am Армения
+        %p.pill.border.small.clickable.filter#filter-tr Турция
+        %p.pill.border.small.clickable.filter#filter-uz Узбекистан
+        %p.pill.border.small.clickable.filter#filter-kz Казахстан
+        %p.pill.border.small.clickable.filter#filter-se Сербия
+        %p.pill.border.small.clickable.filter#filter-ge Грузия
 
     %section#list
       %div
         %div.filterable
-          %a{ href: '/destinations/yerevan' } Ереван
+          %a.filter-am{ href: '/destinations/yerevan' } Ереван
           %a.filter-ru{ href: '/destinations/adler' } Адлер
-          %a{ href: '/destinations/yerevan' } Алматы
-          %a{ href: '/destinations/yerevan' } Батуми
-          %a{ href: '/destinations/yerevan' } Белград
-          %a.filter-ru{ href: '/destinations/yerevan' } Витебск
+          %a.filter-kz{ href: '/destinations/yerevan' } Алматы
+          %a.filter-tr{ href: '/destinations/yerevan' } Анкара
+          %a.filter-ge{ href: '/destinations/yerevan' } Батуми
+          %a.filter-se{ href: '/destinations/yerevan' } Белград
+          %a.filter-by{ href: '/destinations/yerevan' } Витебск
           %a.filter-ru{ href: '/destinations/yerevan' } Горно-Алтайск
-          %a{ href: '/destinations/yerevan' } Гюмри
+          %a.filter-by{ href: '/destinations/yerevan' } Гомель
+          %a.filter-am{ href: '/destinations/yerevan' } Гюмри
           %a.filter-ru{ href: '/destinations/yerevan' } Екатеринбург
-          %a{ href: '/destinations/yerevan' } Октобе
+          %a.filter-kz{ href: '/destinations/yerevan' } Октобе
+          %a.filter-uz{ href: '/destinations/yerevan' } Ташкент
           %a.filter-ru{ href: '/destinations/yerevan' } Тула
           %a.filter-ru{ href: '/destinations/yerevan' } Казань
           %a.filter-ru{ href: '/destinations/yerevan' } Калининград
@@ -46,9 +49,11 @@
           %a.filter-ru{ href: '/destinations/yerevan' } Москва
           %a.filter-ru{ href: '/destinations/yerevan' } Новосибирск
           %a.filter-ru{ href: '/destinations/yerevan' } Санкт-Петербург
-          %a{ href: '/destinations/yerevan' } Севан
+          %a.filter-uz{ href: '/destinations/yerevan' } Самарканд
+          %a.filter-am{ href: '/destinations/yerevan' } Севан
           %a.filter-ru{ href: '/destinations/yerevan' } Сочи
-          %a{ href: '/destinations/yerevan' } Тбилиси
+          %a.filter-tr{ href: '/destinations/yerevan' } Стамбул
+          %a.filter-ge{ href: '/destinations/yerevan' } Тбилиси
           %a.filter-ru{ href: '/destinations/yerevan' } Тула
         %img{src: '/img/map.svg'}
 

@@ -4,7 +4,7 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const glob = require('glob');
 
-const TOP_LEVEL_PAGES = ['work', 'destinations', 'materials', 'about', 'styleguide', 'preview'];
+const TOP_LEVEL_PAGES = ['work', 'destinations', 'materials', 'about', 'styleguide', 'preview', 'tg', 'inst'];
 
 const generateHtmlPlugins = (folderName, usePrefix) => {
     const templateFiles = glob.sync(path.resolve(__dirname, `../src/${folderName}/**/*.haml`));
